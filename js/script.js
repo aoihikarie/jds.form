@@ -86,6 +86,7 @@ $(function() {
     	}
     })
 })();
+                  {
 
 function checkblank() {
 	if (document.getElementById('umur').value <= 25) {
