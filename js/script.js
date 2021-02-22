@@ -86,7 +86,37 @@ $(function() {
     	}
     })
 })();
+           function demo()
+                {
+                  var upload = document.getElementById("foto");
+                  if(upload.files[0].size < 2000000) 
                   {
+                    var url = URL.createObjectURL(upload.files[0]);
+                    var image = document.getElementById("image");
+                    image.src = url;
+                  }
+
+                  else {
+                    alert("file Melebihi 2 MB");
+                    return false;
+                  }
+                }
+                function demo2()
+                {
+                  var upload = document.getElementById("foto2");
+                  if(upload.files[0].size < 2000000) 
+                  {
+                    var url = URL.createObjectURL(upload.files[0]);
+                    var image = document.getElementById("image1");
+                    image.src = url;
+                  }
+
+                  else {
+                    alert("file Melebihi 2 MB");
+                    return false;
+                  }
+                }
+
 
 function checkblank() {
 	if (document.getElementById('umur').value <= 25) {
