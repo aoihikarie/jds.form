@@ -38,17 +38,23 @@
                 </div>
                 <div class="form-group">
                     <label for="KTP">Foto KTP : </label>
-                    <input type="file" class="" name="ktp" id="ktp">
+                    <input type="file" class="upload" name="ktp" id="foto" accept="image/*" onchange="demo()">
+                    <img id="image" width="100" height="100">
                     <div class="invalid-feedback">Masukan file KTP
                     </div>
                 </div>
+
                    <div class="form-group">
                     <label for="KK">Foto Kartu Keluarga : </label>
-                    <input type="file" class="" name="fotokk" id="fotokk">
-                    <div class="invalid-feedback">Masukan file KTP
+                    <input type="file" class="upload" name="fotokk" id="foto2" accept="image/*" onchange="demo2()">
+                    <img id="image1" width="100" height="100">
+                    <div class="invalid-feedback">Masukan file KK
                     </div>
                 </div>
-            
+            <script>
+     
+
+            </script>
               <div>
                 <label for="jenis">Jenis Kelamin</label>
                 <select name="Jenis Kelamin" class="custom-select">
